@@ -1,16 +1,20 @@
 <template>
   <div>
-      <p>{{ module1.teste }}</p>
-      <p>{{ module2.teste }}</p>
+      <p>{{ pageOneModule.teste }}</p>
+      <p>{{ pageTwoModule.teste }}</p>
+      <button @click="mudarStado()">Increment</button>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 
 export default {
+  methods: {
+    ...mapMutations([ 'mudarStado' ])
+  },
   computed: {
-    ...mapState(["module1", "module2"])
+    ...mapState(["pageOneModule", "pageTwoModule"])
   }
 }
 </script>

@@ -1,7 +1,7 @@
-const module1 = {
+const pageOneModule = {
   state: () => ({
-      teste: 'teste em modules'
+      teste: 'teste em modules 1'
   })
 }
 
-export default module1
+export default pageOneModule
