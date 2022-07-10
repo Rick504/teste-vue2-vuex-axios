@@ -1,16 +1,19 @@
 <template>
   <div>
-    <TesteApp />
+    <TesteOne />
+    <TesteTwo />
   </div>
 </template>
 
 <script>
-import TesteApp from './views/Page_one/TesteApp.vue'
+import TesteOne from './views/Page_one/TesteOne.vue'
+import TesteTwo from './views/Page_two/TesteTwo.vue'
 
 export default {
   name: 'App',
   components: {
-    TesteApp
+    TesteOne,
+    TesteTwo
   }
 }
 </script>

@@ -1,8 +1,8 @@
 <template>
   <div>
-      <p>{{ pageOneModule.teste }}</p>
+      <h1>componente 2</h1>
       <p>{{ pageTwoModule.teste }}</p>
-      <button @click="mudarStado()">Increment</button>
+      <button @click="mudarEstadoTwo()">Mudar estado</button>
   </div>
 </template>
 
@@ -11,10 +11,10 @@ import { mapState, mapMutations } from 'vuex'
 
 export default {
   methods: {
-    ...mapMutations([ 'mudarStado' ])
+    ...mapMutations([ 'mudarEstadoTwo' ])
   },
   computed: {
-    ...mapState(["pageOneModule", "pageTwoModule"])
+    ...mapState(["pageTwoModule"])
   }
 }
 </script>
