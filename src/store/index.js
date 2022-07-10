@@ -1,16 +1,23 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-// import { moduleA } from './modules'
 
 Vue.use(Vuex)
 
+const module1 = {
+  state: () => ({
+      teste: 'teste em modules'
+  })
+}
+
+const module2 = {
+  state: () => ({
+      teste: 'teste em modules 2'
+  })
+}
+
 export default new Vuex.Store({
-    state: {
-        teste: 'name'
-    },
-    mutations: {},
-    actions: {},
-    modules: {
-        // a: moduleA
-    }
+   modules: {
+    module1,
+    module2
+  }
 })
